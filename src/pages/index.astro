@@ -6,5 +6,56 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <h1>***</h1>
+  <div
+    class="relative flex min-h-screen w-full flex-col items-center justify-center overflow-x-hidden p-6"
+  >
+    <main
+      class="layout-container flex h-full grow flex-col items-center justify-center max-w-4xl w-full"
+    >
+      <div class="flex flex-col items-center text-center space-y-12 w-full">
+        <!-- Brand Identity -->
+        <div class="space-y-4">
+          <h1
+            class="text-black tracking-[0.2em] text-6xl md:text-8xl font-bold uppercase leading-none"
+          >
+            LA ROTONDE
+          </h1>
+          <h2
+            class="font-serif italic text-xl md:text-2xl text-black/80 font-medium"
+          >
+            Opening Soon in Hillcrest, San Diego
+          </h2>
+        </div>
+        <div class="flex flex-col">
+          <p class="font-mono text-[10px] uppercase tracking-widest">
+            Coffee &mdash; Music &mdash; Wine
+          </p>
+        </div>
+        <!-- Minimalist Iconography -->
+        <div class="flex gap-8 py-4">
+          <span
+            class="material-symbols-outlined text-4xl text-black font-light"
+          >
+            coffee
+          </span>
+
+          <span
+            class="material-symbols-outlined text-4xl text-black font-light"
+            data-icon="album">album</span
+          >
+          <span
+            class="material-symbols-outlined text-4xl text-black font-light"
+            data-icon="wine_bar">wine_bar</span
+          >
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-auto py-12 text-center">
+      <p class="font-mono text-[10px] text-black/40 mt-4">
+        © 2026 Rotunde. All rights reserved.
+      </p>
+    </footer>
+  </div>
 </Layout>
