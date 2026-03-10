@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
+import { Wine, Disc3, Coffee } from "@lucide/astro";
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -33,20 +33,9 @@ import Layout from "../layouts/Layout.astro";
         </div>
         <!-- Minimalist Iconography -->
         <div class="flex gap-8 py-4">
-          <span
-            class="material-symbols-outlined text-4xl text-black font-light"
-          >
-            coffee
-          </span>
-
-          <span
-            class="material-symbols-outlined text-4xl text-black font-light"
-            data-icon="album">album</span
-          >
-          <span
-            class="material-symbols-outlined text-4xl text-black font-light"
-            data-icon="wine_bar">wine_bar</span
-          >
+          <Coffee class="text-4xl text-black" />
+          <Disc3 class="text-4xl text-black" />
+          <Wine class="text-4xl text-black" />
         </div>
       </div>
     </main>
