@@ -1,4 +1,6 @@
 ---
+// Supports weights 100-900
+import "@fontsource-variable/noto-serif/wght.css";
 import Layout from "../layouts/Layout.astro";
 import { Wine, Disc3, Coffee } from "@lucide/astro";
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -49,10 +51,8 @@ import { Wine, Disc3, Coffee } from "@lucide/astro";
 </Layout>
 
 <style is:global>
-  body {
-    color: #1f1300;
-  }
-  h1 .brand {
+  h1 {
+    font-family: "Noto Serif Variable", serif;
   }
   h2 {
     font-family: "Space Grotesk Variable", sans-serif;
