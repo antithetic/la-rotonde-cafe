@@ -16,14 +16,12 @@ import { Wine, Disc3, Coffee } from "@lucide/astro";
         <!-- Brand Identity -->
         <div class="space-y-4">
           <h1
-            class="text-black tracking-[0.2em] text-6xl md:text-8xl font-bold uppercase leading-none"
+            class="brand tracking-[0.2em] text-6xl md:text-8xl font-bold uppercase leading-none"
           >
             LA ROTONDE
           </h1>
-          <h2
-            class="font-serif italic text-xl md:text-2xl text-black/80 font-medium"
-          >
-            Opening Soon in Hillcrest, San Diego
+          <h2 class="font-serif text-xl md:text-2xl font-medium">
+            Opening Soon <br /> Hillcrest, San Diego
           </h2>
         </div>
         <div class="flex flex-col">
@@ -33,28 +31,31 @@ import { Wine, Disc3, Coffee } from "@lucide/astro";
         </div>
         <!-- Minimalist Iconography -->
         <div class="flex gap-8 py-4">
-          <Coffee class="text-4xl text-black" />
-          <Disc3 class="text-4xl text-black" />
-          <Wine class="text-4xl text-black" />
+          <Coffee class="text-4xl" />
+          <Disc3 class="text-4xl" />
+          <Wine class="text-4xl" />
         </div>
       </div>
     </main>
 
     <!-- Footer -->
     <footer class="mt-auto py-12 text-center">
-      <p class="font-mono text-[10px] text-black/40 mt-4">
-        © 2026 Rotunde. All rights reserved.
+      <p class="font-mono text-[10px] mt-4">
+        &copy; 2026 La Rotonde — Valle Hospitality Group LLC. All rights
+        reserved.
       </p>
     </footer>
   </div>
 </Layout>
 
 <style is:global>
-  h1 {
-    font-family: "Space Grotesk Variable", sans-serif;
+  body {
+    color: #1f1300;
+  }
+  h1 .brand {
   }
   h2 {
-    font-family: "Playfair Display Variable", serif;
+    font-family: "Space Grotesk Variable", sans-serif;
   }
   body {
     font-family: "JetBrains Mono Variable", monospace;

@@ -10,11 +10,10 @@
   },
   "dependencies": {
     "@fontsource-variable/jetbrains-mono": "^5.2.8",
-    "@fontsource-variable/playfair-display": "^5.2.8",
     "@fontsource-variable/space-grotesk": "^5.2.10",
     "@lucide/astro": "^0.577.0",
     "@tailwindcss/vite": "^4.2.1",
-    "astro": "^5.17.1",
+    "astro": "^6.1.4",
     "tailwindcss": "^4.2.1"
   }
 }
